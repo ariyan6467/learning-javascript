@@ -5,6 +5,7 @@
 //function functionName(parameters) {
     // code to be executed
 //}
+//note:parameters are local scope.it means variable of parameters work under curli brases.
 //example:function declaration
  function mylove(){
     console.log("I LOVE MY COUNTRY");
@@ -15,7 +16,7 @@
 //functionName(arguments);
 //example: function call
 mylove();
-mylove();
+
 
 
 //function with parameters
@@ -44,3 +45,23 @@ function myequation(a, b, c) {
 
 //function call with arguments
 myequation(5, 10, 2);
+
+//==>function can also return the value
+function anu(a,b,c){
+    result=a+b/c;
+    
+    return result;
+}
+let cons=anu(6,4,2);
+console.log(cons);
+
+
+//arrow function
+//const functionName=(parameters)=>{
+      //code to run   
+//}
+const delulu=(fu,c,k)=>{
+    let avr=fu+c+k;
+    console.log(avr/3)
+}
+delulu(5,5,5); 

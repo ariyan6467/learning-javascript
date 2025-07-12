@@ -31,3 +31,13 @@ edtech.push("microsoft");
 console.log(edtech);
 
 
+function findvowel(z) {
+   for (let idx of z.toLowerCase()) { // make it lowercase to handle A, E, I, O, U
+      if (idx === "a" || idx === "e" || idx === "i" || idx === "o" || idx === "u") {
+         console.log(idx + " is vowel");
+      }
+   }
+}
+
+findvowel("Masud");  // Output: a is vowel, u is vowel
+findvowel("ariyan");
