@@ -30,17 +30,32 @@ console.log(edtech);
 edtech.push("microsoft");
 console.log(edtech);
 
- function godzilla(kingkong){
-   let count = 0;
-   for(let pakhi of kingkong){
-      if(pakhi === "a" || pakhi === "e" || pakhi === "i" || pakhi === "o" || pakhi === "u"){
-         console.log(pakhi + " is vowel");
-         count++;
+
+function findvowel(z) {
+   for (let idx of z.toLowerCase()) { // make it lowercase to handle A, E, I, O, U
+      if (idx === "a" || idx === "e" || idx === "i" || idx === "o" || idx === "u") {
+         console.log(idx + " is vowel");
       }
    }
-   console.log("Total number of vowels in " + kingkong + " is " +count);
+}
 
-   
+findvowel("Masud");  // Output: a is vowel, u is vowel
+
+let pappu=document.querySelector("h2");
+
+
+console.dir(pappu.innerText)
+pappu.innerText=pappu.innerText + "from apna collage "
+
+
+ let divs=document.querySelectorAll(".box");
+ console.dir(divs[0])
+ divs[0].innerText="collage";
+ divs[1].innerText="versity";
+ divs[2].innerText="phd";
+ 
+ let numty = 1;
+ for(div of divs){
+   div.innerText = "div - " + numty;
+   numty++;
  }
- godzilla("durex");
- godzilla("baba school");

@@ -64,4 +64,64 @@ const delulu=(fu,c,k)=>{
     let avr=fu+c+k;
     console.log(avr/3)
 }
-delulu(5,5,5); 
+delulu(5,5,5);
+
+//foreach loop in array
+//foreach is higher order function.that use other function as a parameter.
+//array.foreach(function(item,index,array){
+    //code to run
+//})
+//it change the original array
+let fruits = ["apple", "banana", "cherry", "date"];
+   fruits.forEach(function(item,index,array){
+    console.log(item,index,array);
+    
+    
+   });
+
+   //map over the array
+   //array.map(function(item,index,array){
+    //code to run
+   //})
+   //it does not change the original array.it return a new array.
+   let country = ["india", "pakistan", "china", "japan", "korea"];  
+   
+   country.map(function(item,index,array){
+    console.log(item.toUpperCase(),index,array);
+   });
+   console.log(country);
+
+
+   //filter** over the array
+   //according to the condition it return a new array.
+   //array.filter(function(item,index,array){
+    //code to run
+   //})
+   let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+   let evenNumbers = numbers.filter(function(item,index,array){
+    return item % 2 === 0;
+   });
+   console.log(evenNumbers);
+
+
+   //reduce over the array
+   //perform the operation on the array and return a single value.
+   //array.reduce(function(total,item,index,array){
+    //code to run
+   //},initial value)
+  let nums=[1,2,3,4];
+ let sum=nums.reduce(function(ini,sec){
+   return ini + sec
+    
+ }
+      
+)
+console.log(sum);
+
+/*ini=1,sec=2-->ini+sec & restore in ini-->now,ini=3,sec=3-->ini+sec & restore in ini-->now,ini=6,sec=4-->ini+sec & restore in ini them return to sum.*/
+//if you wanna find maximam value from array then "return ini>sec? ini : sec
+ 
+   
+
+
+

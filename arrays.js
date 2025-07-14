@@ -88,5 +88,7 @@ let cities = ["Dhaka", "Chittagong", "Sylhet", "Rajshahi", "Khulna", "Barisal", 
 cities.splice(2, 4, "Narayanganj", "Gazipur"); //["Dhaka", "Chittagong", "Narayanganj", "Gazipur", "Khulna", "Barisal", "Rangpur", "Comilla"]
 console.log(cities);
 
+let number
+
 
 
