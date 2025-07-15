@@ -76,3 +76,8 @@ para.classList.add("daru")
 let par = document.querySelector(".daru");
 console.log(par);
 para.classList.remove("daru")
+
+
+
+
+

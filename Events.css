@@ -1,0 +1,15 @@
+button{
+    background-color: rgb(135, 18, 213);
+    height: 70px;
+    width: 150px;
+    border-radius: 20px;
+    color: #000;
+}
+.light{
+    background-color: rgb(35, 201, 46);
+    color: red;
+}
+.dark{
+    background-color: #000;
+    color:blue;
+}
