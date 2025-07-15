@@ -44,18 +44,35 @@ findvowel("Masud");  // Output: a is vowel, u is vowel
 let pappu=document.querySelector("h2");
 
 
-console.dir(pappu.innerText)
-pappu.innerText=pappu.innerText + "from apna collage "
 
 
- let divs=document.querySelectorAll(".box");
- console.dir(divs[0])
- divs[0].innerText="collage";
- divs[1].innerText="versity";
- divs[2].innerText="phd";
+
+
+//  let divs=document.querySelectorAll(".box");
+//  console.dir(divs[0])
+//  divs[0].innerText="collage";
+//  divs[1].innerText="versity";
+//  divs[2].innerText="phd";
  
- let numty = 1;
- for(div of divs){
-   div.innerText = "div - " + numty;
-   numty++;
- }
+//  let numty = 1;
+//  for(div of divs){
+//    div.innerText = "div - " + numty;
+//    numty++;
+//  }
+
+ let ronaldo=document.createElement("button");
+ ronaldo.innerText="HOME";
+
+ let geni = document.querySelector("body");
+ geni.prepend(ronaldo);
+ ronaldo.style.backgroundColor="red";
+ronaldo.style.color="blue";
+geni.style.background="pink"
+
+let para = document.querySelector(".bhotka");
+console.log(para);
+para.classList.add("daru")
+// para.setAttribute("class","daru");
+let par = document.querySelector(".daru");
+console.log(par);
+para.classList.remove("daru")

@@ -79,13 +79,38 @@ document.body.style.background = "pink"
               
 //creat element-->let montu=document.createElement("tag")
 //add element at screen-->
-//  ->  .node.append(element)// tmi j node r sesh a add hbe, sei node r  satei add kore
+//  ->  node.append(element)// tmi j node r sesh a add korba, sei node r  satei add kore
 
 let ghasita = document.createElement("button");
 ghasita.innerText="motu patlu ki jodi"
 console.log(ghasita);
 let john=document.querySelector(".jhatka");
-john.append(ghasita);
+ john.append(ghasita);//add at the end of node(inside)
+john.prepend(ghasita);//add at the start to the node(inside)
+john.before(ghasita);//add before the node(outside)
+john.after(ghasita);//add before the node(outside)
+
+
+let newheading = document.createElement("h1");
+newheading.innerHTML="<i>This is JS!</i>";
+
+let ass = document.querySelector("body");
+ass.prepend(newheading)
+
+let mad = document.createElement("p");
+mad.innerText="this is a UNORDERED LIST"
+john.prepend(mad);
+
+//REMOVE ELEMENTS
+// node.remove()
+
+let messi = document.querySelector(".list");
+console.log(messi);
+ messi.remove();
+
+
+
+ 
 
 
 
