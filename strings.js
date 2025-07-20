@@ -56,14 +56,19 @@ let numphy2 = "magir fua";
 console.log( numphy2.slice(0,4)); //return part of the string from index 0 to 4.4th index is not included
 console.log( numphy2.slice(-3)); //return last 3 characters of the string
 
+let montu = "ami akta gordhob";
+let totu = montu.slice(-7);
+console.log(totu);
+
 
 let str1 = "Nahian";
 let str2 = "Jawad";
 console.log(str1.concat(" ", str2)); //concatenates str1 with str2  with a space in between
 console.log(str1.concat(str2)); //concatenates str1 with str2 without a space in between
 console.log(str1 + " " + str2); //another way to concatenate strings
-
-
+let str7 = str1.concat(" "+str2);
+console.log(str7)
+ 
 let str3 = "Anu";
 console.log(str3.replace("A","T")); //replaces first word from A to T
 console.log(numphy2.replace("magir","sudanir")); //replaces first word from magir to sudanir

@@ -65,13 +65,14 @@ console.log(btnmode);
 let crntmode = "dark";
 
 btnmode.addEventListener("click", () => {
-  if (crntmode === "light") {
-    crntmode = "dark";
+  
+  if (crntmode === "dark") {
+    crntmode = "light";
     document.querySelector("body").classList.add("dark");
     document.querySelector("body").classList.remove("light");
 
-  } else if (crntmode === "dark") {
-     crntmode = "light";
+  } else if (crntmode === "light") {
+     crntmode = "dark";
      document.querySelector("body").classList.add("light");
       document.querySelector("body").classList.remove("dark");
 

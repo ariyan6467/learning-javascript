@@ -20,7 +20,7 @@ document.body.style.background = "pink"
 
 //   4.selecting with query selector
 //   document.queryselector("myid/.myclass/#tag") 
-     console.dir(document.querySelector("button"))     
+     console.log(document.querySelector("button"))     
     //==>return only first element
 //   document.queryselectorAll("myid/myclass/tag")
      console.dir(document.querySelectorAll("button"))   
@@ -35,15 +35,17 @@ document.body.style.background = "pink"
 /*    2.innertext:returns the "text content" of   the    element and its children.*/
     let manchu=document.getElementById("list");
     console.dir(manchu.innerText)
-
+   
     // 3.innerHTML:returns HTML elements
     console.dir(ami.innerHTML)
-
+    
     // 4.textContent:change elements including children
     let head=document.querySelector(".heading")
     console.dir(head.textContent="bakchod")
 
-
+     let para = document.querySelector("p");
+     console.log(para);
+     
 
     //Attributes 
    
@@ -58,9 +60,10 @@ document.body.style.background = "pink"
     // ==>change attribute value
     let motu = document.querySelector("button");
     console.log(motu);
-    console.log(motu.setAttribute("id","buttoni"));//check 63
-    console.log(patlu.setAttribute("id","package"))//check 53
-
+    console.log(motu.setAttribute("id","buttoni"));//check 62
+    console.log(patlu.setAttribute("id","package"))//check 55
+    console.log(motu.getAttribute("id"));
+    console.log(patlu.getAttribute("id"));
     //.node.style
     //==>change style attribute value
     motu.style.background="red"
@@ -89,7 +92,9 @@ let john=document.querySelector(".jhatka");
 john.prepend(ghasita);//add at the start to the node(inside)
 john.before(ghasita);//add before the node(outside)
 john.after(ghasita);//add before the node(outside)
-
+ghasita.style.background="yellow"
+ghasita.style.color="green"
+ghasita.innerText="this is a ghasita"
 
 let newheading = document.createElement("h1");
 newheading.innerHTML="<i>This is JS!</i>";
@@ -108,6 +113,9 @@ let messi = document.querySelector(".list");
 console.log(messi);
  messi.remove();
 
+
+ 
+ 
 
 
  

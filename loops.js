@@ -51,8 +51,15 @@ do {
 //     code to be executed
 // }
 let str = "I am a student of CSE";
-let count;
-for (let count of str) {
-    console.log("Total characters in the string: ", count);
+let str2=str.toLowerCase();
+let idx=0;
+for (let count of str2) {
+     if (count ==="a" || count ==="e" || count ==="i" ||count ==="o" || count ==="u"){
+        console.log(count + " "+ "is a vowel");
+        idx++;
+     }
 }
+console.log("total vowel in" +" " + str2+" " +"is"  +" " + idx);
+console.log(str.length)
+
 

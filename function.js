@@ -10,7 +10,7 @@
  function mylove(){
     console.log("I LOVE MY COUNTRY");
     console.log("I LOVE MY FAMILY");
-    console.log("I LOVE MYSELF");
+   
  }
 // 2. function call
 //functionName(arguments);
@@ -20,12 +20,13 @@ mylove();
 
 
 //function with parameters
-function mygoal(name, age){
-    console.log("My name is " + name);
-    console.log("My age is " + age);
+function myresolution(reso1,reso2,reso3){
+    console.log("i wanna be "+ " " +reso1);
+    console.log("i wanna be "+ " " +reso2);
+    console.log("i wanna  "+ " " +reso3);
 }
 //function call with arguments
-mygoal("John Doe", 25);
+myresolution("Finansially independent","Physically Fit & Attractive","Communicate Eng Fluently" );
 
 //function with parameters
 function myachivement(age25,age30,age40,age50){
@@ -78,6 +79,8 @@ let fruits = ["apple", "banana", "cherry", "date"];
     
     
    });
+
+  
 
    //map over the array
    //array.map(function(item,index,array){

@@ -11,5 +11,6 @@ button{
 }
 .dark{
     background-color: #000;
-    color:blue;
+    color:rgb(108, 108, 113);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

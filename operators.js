@@ -54,10 +54,7 @@ console.log(!nahi); // false
 console.log(!nahi2); // true
 
 
-let a1 = 5;
-let b1 = 10;
-let c1 = a1 + b1;
-console.log("c1:", c1); // 15
+
 
 
 //unary operations(++, --, +, -)
@@ -73,3 +70,7 @@ console.log(a2);
 let tahi = 20;
 let status = (tahi >= 18) ? "Adult" : "Not Adult";
 console.log(status); // "Adult"
+
+let mode = "light" ;
+let theme=(mode === "light") ? "bright" : "dark";
+console.log(theme);
