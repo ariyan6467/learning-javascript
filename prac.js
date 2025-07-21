@@ -78,6 +78,39 @@ console.log(par);
 para.classList.remove("daru")
 
 
+//You are creating a website for your collage..Create a class User with 2 properties: name and age.it also has a method called viewData() that allow the user to view their data.
+
+class user {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    viewData() {
+        console.log(`Name: ${this.name}, Age: ${this.age}`);
+    }
+}
+
+let user1 = new user("Nahian Jawad", 21);
+user1.viewData(); // Output: Name: Nahian Jawad, Age: 21
+let user2 = new user("Muntasir Islam", 20);
+user2.viewData(); // Output: Name: Muntasir Islam, Age: 20
 
 
+//create a new class called Admin which inherits from user.Add a new method called editData to admin that allows it to edit web site data
+
+class Admin extends user {
+    constructor(name, age) {
+        super(name, age); // Call the parent class constructor
+    }
+
+    editData(newName, newAge) {
+        this.name = newName;
+        this.age = newAge;
+        console.log(`Data updated: Name - ${this.name}, Age - ${this.age}`);
+    }
+}
+let admin1 = new Admin("Sazzadul Islam", 24);
+admin1.viewData(); // Output: Name: Sazzadul Islam, Age: 24       
+admin1.editData("Sazzadul Islam Mahim", 25);
 
